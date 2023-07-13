@@ -6,11 +6,16 @@
   background: none;
   font: 19px/normal var(--rubik-medium);
   border-radius: 5px;
+  width: 100%;
   max-width: 165px;
   transition: .3s linear;
 
   &:hover {
     background: #6CEEC7;
     color: #000000;
+  }
+
+  @media (max-width: 768px) {
+    max-width: 100%;
   }
 }

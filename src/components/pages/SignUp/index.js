@@ -89,7 +89,7 @@ const SignUp = () => {
             ...values,
             phone: `${selectedCountry}${values.phone}`
         }
-        console.log(JSON.stringify(correctedValues, null, 2));
+        console.log(JSON.stringify(correctedValues, null, 2)); // TODO: Need to add FormData for real request.
     };
     return (
         <div className={styles.root}>
@@ -171,6 +171,7 @@ const SignUp = () => {
                     <div className={styles.buttonWrapper}>
                         <Button
                             label='Sign up'
+                            type='submit'
                         />
                     </div>
                 </form>
